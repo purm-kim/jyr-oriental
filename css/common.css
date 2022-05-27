@@ -769,11 +769,11 @@ input {
 }
 
 .pt00 {
-  padding-top: 00rem;
+  padding-top: 00rem !important;
 }
 
 .pb00 {
-  padding-bottom: 00rem;
+  padding-bottom: 00rem !important;
 }
 
 .pl00 {
@@ -813,11 +813,11 @@ input {
 }
 
 .pt10 {
-  padding-top: 10rem;
+  padding-top: 10rem !important;
 }
 
 .pb10 {
-  padding-bottom: 10rem;
+  padding-bottom: 10rem !important;
 }
 
 .pl10 {
@@ -857,11 +857,11 @@ input {
 }
 
 .pt20 {
-  padding-top: 20rem;
+  padding-top: 20rem !important;
 }
 
 .pb20 {
-  padding-bottom: 20rem;
+  padding-bottom: 20rem !important;
 }
 
 .pl20 {
@@ -901,11 +901,11 @@ input {
 }
 
 .pt30 {
-  padding-top: 30rem;
+  padding-top: 30rem !important;
 }
 
 .pb30 {
-  padding-bottom: 30rem;
+  padding-bottom: 30rem !important;
 }
 
 .pl30 {
@@ -945,11 +945,11 @@ input {
 }
 
 .pt40 {
-  padding-top: 40rem;
+  padding-top: 40rem !important;
 }
 
 .pb40 {
-  padding-bottom: 40rem;
+  padding-bottom: 40rem !important;
 }
 
 .pl40 {
@@ -989,11 +989,11 @@ input {
 }
 
 .pt50 {
-  padding-top: 50rem;
+  padding-top: 50rem !important;
 }
 
 .pb50 {
-  padding-bottom: 50rem;
+  padding-bottom: 50rem !important;
 }
 
 .pl50 {
@@ -1033,11 +1033,11 @@ input {
 }
 
 .pt60 {
-  padding-top: 60rem;
+  padding-top: 60rem !important;
 }
 
 .pb60 {
-  padding-bottom: 60rem;
+  padding-bottom: 60rem !important;
 }
 
 .pl60 {
@@ -1077,11 +1077,11 @@ input {
 }
 
 .pt70 {
-  padding-top: 70rem;
+  padding-top: 70rem !important;
 }
 
 .pb70 {
-  padding-bottom: 70rem;
+  padding-bottom: 70rem !important;
 }
 
 .pl70 {
@@ -1121,11 +1121,11 @@ input {
 }
 
 .pt80 {
-  padding-top: 80rem;
+  padding-top: 80rem !important;
 }
 
 .pb80 {
-  padding-bottom: 80rem;
+  padding-bottom: 80rem !important;
 }
 
 .pl80 {
@@ -1165,11 +1165,11 @@ input {
 }
 
 .pt90 {
-  padding-top: 90rem;
+  padding-top: 90rem !important;
 }
 
 .pb90 {
-  padding-bottom: 90rem;
+  padding-bottom: 90rem !important;
 }
 
 .pl90 {
@@ -1209,11 +1209,11 @@ input {
 }
 
 .pt100 {
-  padding-top: 100rem;
+  padding-top: 100rem !important;
 }
 
 .pb100 {
-  padding-bottom: 100rem;
+  padding-bottom: 100rem !important;
 }
 
 .pl100 {
@@ -1253,11 +1253,11 @@ input {
 }
 
 .pt110 {
-  padding-top: 110rem;
+  padding-top: 110rem !important;
 }
 
 .pb110 {
-  padding-bottom: 110rem;
+  padding-bottom: 110rem !important;
 }
 
 .pl110 {
@@ -1297,11 +1297,11 @@ input {
 }
 
 .pt120 {
-  padding-top: 120rem;
+  padding-top: 120rem !important;
 }
 
 .pb120 {
-  padding-bottom: 120rem;
+  padding-bottom: 120rem !important;
 }
 
 .pl120 {
@@ -1341,11 +1341,11 @@ input {
 }
 
 .pt130 {
-  padding-top: 130rem;
+  padding-top: 130rem !important;
 }
 
 .pb130 {
-  padding-bottom: 130rem;
+  padding-bottom: 130rem !important;
 }
 
 .pl130 {
@@ -1385,11 +1385,11 @@ input {
 }
 
 .pt140 {
-  padding-top: 140rem;
+  padding-top: 140rem !important;
 }
 
 .pb140 {
-  padding-bottom: 140rem;
+  padding-bottom: 140rem !important;
 }
 
 .pl140 {
@@ -1429,11 +1429,11 @@ input {
 }
 
 .pt150 {
-  padding-top: 150rem;
+  padding-top: 150rem !important;
 }
 
 .pb150 {
-  padding-bottom: 150rem;
+  padding-bottom: 150rem !important;
 }
 
 .pl150 {
@@ -1473,11 +1473,11 @@ input {
 }
 
 .pt160 {
-  padding-top: 160rem;
+  padding-top: 160rem !important;
 }
 
 .pb160 {
-  padding-bottom: 160rem;
+  padding-bottom: 160rem !important;
 }
 
 .pl160 {
@@ -1517,11 +1517,11 @@ input {
 }
 
 .pt170 {
-  padding-top: 170rem;
+  padding-top: 170rem !important;
 }
 
 .pb170 {
-  padding-bottom: 170rem;
+  padding-bottom: 170rem !important;
 }
 
 .pl170 {
@@ -1561,11 +1561,11 @@ input {
 }
 
 .pt180 {
-  padding-top: 180rem;
+  padding-top: 180rem !important;
 }
 
 .pb180 {
-  padding-bottom: 180rem;
+  padding-bottom: 180rem !important;
 }
 
 .pl180 {
@@ -1605,11 +1605,11 @@ input {
 }
 
 .pt190 {
-  padding-top: 190rem;
+  padding-top: 190rem !important;
 }
 
 .pb190 {
-  padding-bottom: 190rem;
+  padding-bottom: 190rem !important;
 }
 
 .pl190 {
@@ -1649,11 +1649,11 @@ input {
 }
 
 .pt200 {
-  padding-top: 200rem;
+  padding-top: 200rem !important;
 }
 
 .pb200 {
-  padding-bottom: 200rem;
+  padding-bottom: 200rem !important;
 }
 
 .pl200 {

@@ -212,10 +212,10 @@ input {
     gap: #{$i}0rem;
   }
   .pt#{$i}0{
-    padding-top: #{$i}0rem;
+    padding-top: #{$i}0rem !important;
   }
   .pb#{$i}0{
-    padding-bottom: #{$i}0rem;
+    padding-bottom: #{$i}0rem !important;
   }
   .pl#{$i}0{
     padding-left: #{$i}0rem;

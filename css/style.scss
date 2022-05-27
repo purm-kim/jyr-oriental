@@ -61,6 +61,7 @@ h1, h2, h3, h4, h5, h6{margin: 0;}
 .fz30{font-size: 30rem;}
 .fz40{font-size: 40rem;}
 .fz55{font-size: 55rem;}
+.fz60{font-size: 60rem;}
 
 .line_h{line-height: 1.6em;}
 
@@ -191,12 +192,17 @@ h1, h2, h3, h4, h5, h6{margin: 0;}
     #tabs{
       position: relative;
       width: 100%;
+      height: 710rem;
+      @include mq(mobile){
+        height: 580rem;
+      }
       .tabmenu_wrap{
         display: flex;
         flex-direction: column;
-        row-gap: 10rem;
+        justify-content: space-between;
         float: left;
         width: 40%;
+        height: 100%;
       }
       .tabmenu{
         width: 364rem;
@@ -227,10 +233,10 @@ h1, h2, h3, h4, h5, h6{margin: 0;}
       .con_wrap{
         float: right;
         width: 60%;
-        height: 670rem;
-
+        height: 100%;
+        // height: 710rem;
         @include mq(mobile){
-          height: 563rem;
+          // height: 563rem;
         }
         // background-color: #c4c4c4;
         .tab_content{
@@ -329,25 +335,182 @@ html .ui-button.ui-state-disabled:active{
 
 //se04
 .se04{
-  // margin-top: 165rem;
-  height: 680rem;
-  background-color: var(--pri-03);
+  &::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 150rem;
+    right: 0;
+    z-index: -1;
+    width: 70%;
+    height: calc(100% - 300rem);
+    border-top-left-radius: 100rem;
+    background-color: var(--pri-03);
+    @include mq(mobile){
+      width: 100%;
+    }
+  }
+  .container{
+    .img_wrap{
+      width: 520rem !important;
+      height: 600rem;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .txt_box{
+      padding: 80rem 0;
+      .con{
+        column-gap: 60rem;
+        row-gap: 30rem;
+      }
+    }
+  }
+  
 }
 
 //se05
 .se05{
-  height: 500rem;
+  .item{
+    flex: 1;
+    max-width: 30%;
+    @include mq(mobile){
+      max-width: 100%;
+    }
+    a{
+      display: block;
+      padding: 50rem;
+      background-color: #f3f3f3;
+      transition: all 0.3s;
+      .date{
+        color: rgba($color: #000, $alpha: 0.3);
+      }
+      .more{
+        color: var(--black-o5);
+      }
+    }
+    &.on{
+      a{
+        background-color: var(--pri-03);
+        p{
+          color: #fff;
+        }
+      }
+    }
+    &:hover{
+      a{
+        background-color: var(--pri-03);
+        p{
+          color: #fff;
+        }
+      }
+    }
+  }
 
 }
 
 //se06
 .se06{
-  height: 510rem;
-  background-color: aliceblue;
+  .container{
+    // @include mq(mobile){
+    //   display: flex;
+    //   flex-direction: column;
+    // }
+  }
+  .map{
+    width: 100%;
+    height: 410rem;
+    background-color: #f3f3f3;
+    
+    .location{
+      padding: 70rem;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15rem;
+      width: 483rem;
+      background-color: rgba($color: #7E191E, $alpha: 0.85);
+      @include mq(mobile){
+        position: static;
+        transform: none;
+        top: unset;
+        right: unset;
+        width: 100%;
+      }
+      .subway{
+        column-gap: 5rem;
+        .orange_line{
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 25rem;
+          height: 25rem;
+          border-radius: 50%;
+          background-color: #FF7D21;
+        }
+      }
+      .btn_wrap{
+        column-gap: 10rem;
+        .map_btn{
+          padding: 15rem;
+          width: 150rem;
+          height: 50rem;
+        }
+        .naver{
+          background-color: #03C75A;
+        }
+        .kakao{
+          background-color: #FAE100;
+        }
+      }
+    }
+  }
+  .info{
+    padding: 30rem 75rem;
+    width: 100%;
+    background-color: var(--pri-03);
+    row-gap: 10rem;
+    ul{
+      row-gap: 10rem;
+      flex-wrap: wrap;
+    }
+    .rest{
+      color: #FFDA6C;
+    }
+  }
 }
 
 //footer
 #footer{
   background-color: #2d2d2d;
-  height: 230rem;
+  // height: 230rem;
+  .upside{
+    padding: 55rem 0;
+    border-bottom: 1rem solid rgba($color: #fff, $alpha: 0.2);
+  }
+  .downside{
+    padding: 30rem 0;
+    .fnb{
+      li{
+        border-right: 1rem solid rgba($color: #fff, $alpha: 0.5);
+        &:first-child{
+          a{
+            padding-left: 0;
+          }
+        }
+        &:last-child{
+          border-right: none;
+        }
+        a{
+          padding: 0 36rem;
+          color: rgba($color: #fff, $alpha: 0.5);
+        }
+      }
+    }
+    .copyright{
+      color: rgba($color: #fff, $alpha: 0.5);
+    }
+  }
 }

@@ -21,10 +21,12 @@
 </head>
 <body>
 
+  
   <!-- 헤더 -->
   <header id="header">
 
   </header>
+
 
   <!-- 퀵메뉴 -->
 
@@ -32,7 +34,9 @@
   <section class="main_V">
     <div class="swiper mainVisual">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"></div>
+        <div class="swiper-slide">
+          <img src="/img/main/mainV_01.png" alt="">
+        </div>
         <div class="swiper-slide"></div>
         <div class="swiper-slide"></div>
       </div>
@@ -162,32 +166,131 @@
     </div>
   </section>
 
-  <!-- 의료진소개 -->
-  <section class="section se04"></section>
+  <!-- 의료진소개 se04 -->
+  <section class="section se04 pos-r">
+    <div class="container flex mo-col">
+      <div class="img_wrap">
+        <img src="" alt="">
+      </div>
+      <div class="txt_box">
+        <p class="fz55"></p>
+        <p class="fz35 fc01 mt30 fw600">한의사 정용래</p>
+        <div class="con flex mo-col mt30">
+          <ul class="fz21 fc01 lh16">
+            <li>동국대 한의과대학 졸업</li>
+            <li>동 대학원 한의학 석사</li>
+            <li>동 대학원 한의학 박사</li>
+            <li>대한 척추신경추나의학회 정회원</li>
+            <li>대한 약침학회 정회원</li>
+            <li>대한 침구학회 정회원</li>
+            <li>중경의학회 정회원</li>
+          </ul>
+          <ul class="fz21 fc01 lh16">
+            <li>제1기 추나요법지도자양성 워크샵 수료 (1995)</li>
+            <li>제1기 추나학 연구과정 수료 (2002)</li>
+            <li>前 부산 경남 척추신경추나의학회 회장</li>
+            <li>대한 척추신경추나의학회 공인강사</li>
+            <li>대한 척추신경추나의학회 교육위원</li>
+            <li>(1995년부터 ~ 현재)
+              <br>대한 척추신경추나의학회 대의원총회 의장</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- 병원소식 -->
-  <section class="section se05">
+  <!-- 병원소식 se05 -->
+  <section class="section se05 pt00">
     <div class="container">
-      <ul class="flex mo-col">
-        <li>
-          <a href="">
-            <p></p>
-            <p></p>
-            <span></span>
+      <ul class="flex mo-col jcsb gap30">
+        <li class="item">
+          <a href="#">
+            <p class="fz24 fw700 wbk">안녕하세요. 정용래 한의원 소식입니다.</p>
+            <p class="fz19 mt30 date">2022-00-00</p>
+            <p class="fz19 fw700 tar mt50 more">more +</p>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#">
+            <p class="fz24 fw700 wbk">안녕하세요. 정용래 한의원 소식입니다.</p>
+            <p class="fz19 mt30 date">2022-00-00</p>
+            <p class="fz19 fw700 tar mt50 more">more +</p>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#">
+            <p class="fz24 fw700 wbk">안녕하세요. 정용래 한의원 소식입니다.</p>
+            <p class="fz19 mt30 date">2022-00-00</p>
+            <p class="fz19 fw700 tar mt50 more">more +</p>
           </a>
         </li>
       </ul>
     </div>
   </section>
+  <script></script>
 
-  <!-- 오시는길 -->
-  <section class="section se06">
-    <div class="container"></div>
+  <!-- 오시는길 se06 -->
+  <section class="section se06 pt00">
+    <div class="container">
+      <div class="map pos-r" id="map">
+        <div class="location pos-a">
+          <p class="ft_serif fz28 fw600 fc01">정용래한의원 오시는길</p>
+          <p class="fz21 fc01 mt40 lh14">부산 부산진구 중앙대로 931</p>
+          <p class="fz21 fw700 fc01 lh14 flex aic subway">지하철 <span class="orange_line tac fw400"> 1 </span> 호선 양정역 5번출구</p>
+          <div class="btn_wrap flex mt40">
+            <a href="#" class="map_btn naver fz18 fc01 fw600 tac">네이버지도</a>
+            <a href="#" class="map_btn kakao fz18 fw600 tac">카카오지도</a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="info flex mo-col">
+        <p class="ft_serif fz28 fc01 mr50 dib wbk">진료시간 안내</p>
+        <ul class="flex mo-col">
+          <li class="left flex jcsb aic gap30 mr50">
+            <p class="fz21 fc01"><span>평</span><span>일</span></p>
+            <p class="fz21 fc01 wbk">00:00 ~ 00:00</p>
+          </li>
+          <li class="left flex jcsb aic gap30 mr50">
+            <p class="fz21 fc01"><span>토</span><span>요</span><span>일</span></p>
+            <p class="fz21 fc01 wbk">00:00 ~ 00:00</p>
+          </li>
+          <li class="left flex jcsb aic gap30 mr50">
+            <p class="fz21 fc01"><span>점</span><span>심</span></p>
+            <p class="fz21 fc01 wbk">00:00 ~ 00:00</p>
+          </li>
+          <li class="left flex jcsb aic gap30">
+            <p class="fz21 rest wbk">*일요일/공휴일 휴진</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
   
   <!-- 푸터 -->
   <footer id="footer">
-    <div class="container"></div>
+    <div class="upside">
+      <div class="container">
+        <div class="footer_logo">
+          <img src="" alt="">
+        </div>
+        <p></p>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <div class="downside">
+      <div class="container flex jcsb">
+        <ul class="fnb flex">
+          <li><a href="" class="fz18 fw500">이용약관</a></li>
+          <li><a href="" class="fz18 fw500">개인정보취급방침</a></li>
+          <li><a href="" class="fz18 fw500">비급여진료비안내</a></li>
+        </ul>
+        <p class="fz18 fw500 copyright">Copyright 2022 정용래. ALL RIGHT RESERVED.</p>
+      </div>
+    </div>
+    
   </footer>
   
 </body>
