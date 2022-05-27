@@ -1,0 +1,329 @@
+@import "_mixins.scss";
+
+// preset
+@mixin pos_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// CONTAINER MIXINS
+@mixin container($w, $mw) {
+  width: $w;
+  max-width: $mw;
+  margin: 0 auto;
+}
+@mixin container_full {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@mixin overlay($color, $degree) {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $color;
+    opacity: $degree;
+  }
+}
+// 게시판 Custom
+// Basic_view
+.boardTable {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 2rem solid #333;
+    th {
+      width: 10%;
+      background: #fafafa;
+      @include mq(mobile) {
+        width: auto;
+      }
+    }
+    th,
+    td {
+      padding: 15rem;
+      border-bottom: 1rem solid #eee;
+      @include mq(mobile) {
+        padding: 10rem;
+      }
+    }
+  }
+}
+// Basic_list
+.tbl_wrap table {
+  border-collapse: collapse;
+  border-top: 2rem solid #333;
+}
+.tbl_head01 tbody td {
+  padding: 4rem;
+}
+.tbl_head01 td {
+  height: auto;
+  padding: 20rem 5rem;
+}
+// 공지 아이콘
+.bo_notice .notice_icon {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 3px 5px;
+  background: #333;
+  color: #fff;
+}
+// 새글 아이콘
+#bo_list .bo_tit .new_icon {
+  color: #fff;
+  background: #333;
+}
+.register {
+  @include container(1100rem, 90%);
+  margin: 200rem auto;
+}
+#login_fs {
+  padding: 40rem 20rem;
+}
+
+// 관리자페이지 헤더
+#hd_top {
+  background: #333;
+  height: 50rem;
+  #btn_gnb {
+    background: url(../../adm/img/menu-cl.png) 50% 50% no-repeat #333;
+    width: 50rem;
+    height: 50rem;
+  }
+  #logo {
+    background: #333;
+  }
+  .tnb_shop {
+    display: none;
+  }
+  #tnb {
+    .tnb_service {
+      background: #000;
+    }
+    button {
+      background: #000;
+      span {
+        background: url(../../adm/img/op_btn.png) 50% 50% no-repeat #000;
+      }
+    }
+  }
+}
+#gnb .gnb_oparea li a:hover,
+#gnb .gnb_oparea li .on {
+  color: #000;
+  position: relative;
+  &::after {
+    content: "·";
+    position: absolute;
+    left: -6rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+#bo_v_atc {
+  padding: 40rem 20rem;
+}
+
+#bo_list,
+#bo_gall,
+#bo_w,
+#bo_v {
+  width: 1380rem;
+  max-width: 90%;
+  margin: 100rem auto;
+}
+.h2_frm{
+  color: #131313;
+}
+.btn_submit,.btn_list03 a,.btn_01, a.btn_01,a.btn_frmline{
+  background:#c1c1c1;
+  color:#fff;
+  &:hover{
+    background:var(--pri-01);
+  }
+}
+.btn_02, a.btn_02{
+  background: #555;
+}
+.btn_03, a.btn_03{
+  background: #333;
+}
+#login_password_lost{
+  color:#333;
+}
+.tbl_head01 thead th{
+  background: #e3e3e3;
+  border:1rem solid #ccc;
+}
+a.btn_admin, .btn_admin{
+  color:#000;
+}
+#bo_list tbody tr:hover{
+  border-left: 2rem solid #000;
+}
+// 테마메뉴 숨김
+li[data-menu="100280"]{
+  display: none;
+}
+
+#ctt{
+  width: 1380rem;
+  margin:100rem auto;
+  max-width: 90%;
+}
+
+// 게시판 서브탑 공통
+.bbs_subtop {
+  margin-top: 100rem;
+  position: relative;
+  .img_wrap{
+    height: 400rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      // object-position: center left 10rem;
+    }
+    margin-bottom: 100rem;
+  }
+  .inTitle{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    h2.title{
+      color:#555;
+    }
+  }
+    h2.title{
+      text-align: center;
+      font-size: 40rem;
+    }
+}
+
+#fregister p{
+  background: var(--pri-02);
+  &::before{
+    background: var(--pri-01);
+  }
+}
+#bo_cate a{
+  border: 1px solid var(--pri-02);
+  color: var(--pri-01);
+}
+#bo_cate #bo_cate_on{
+  background: var(--pri-02);
+  border: 1px solid var(--pri-01);
+  box-shadow: inset 0 2rem 5rem var(--pri-02);
+}
+.bo_cate_link{
+  background: #eee; 
+  color: var(--pri-01);
+}
+#bo_cate a:focus, #bo_cate a:hover, #bo_cate a:active{
+  background: var(--pri-01);
+}
+
+.ctt_admin{
+  padding-right: 10%;
+}
+
+// 모바일 팝업 위치 강제 변경
+.hd_pops{
+  position: fixed;
+  @include mq(mobile){
+    top: 100rem !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    position: fixed;
+  }
+  .hd_pops_con{
+    @include mq(mobile){
+      width: 450rem !important;
+      height: 635rem !important; 
+    }
+  }
+}
+
+// 로그인 custom
+.chk_box input[type="checkbox"] + label:hover{
+  color:var(--pri-01);
+}
+.login_wrap{
+  display: grid;
+  place-content: center;
+  width: 100%;
+  background: url(../img/images/common/login_bg.jpg) no-repeat center center / cover;
+  .required{
+    background: none !important;
+  }
+  .mbskin .mbskin_box{
+    border:0;
+    background: rgba(255,255,255,0.75);
+  }
+  #mb_login{
+    width: 700rem;
+    @include mq(mobile){
+      width: 80%;
+    }
+    margin: 0 auto;
+    border:none;
+    box-shadow: 5 5 30rem rgba(0, 0, 0, 0.25);
+    font-size: 18rem;
+    legend {
+      display: none;
+    }
+  }
+  #login_fs{
+    padding: 70rem 90rem;
+    @include mq(mobile){
+      padding: 35rem 45rem;
+    }
+  }
+  #mb_login #login_fs .frm_input{
+    height: auto;
+    padding: 23rem;
+    border-radius:0;
+  }
+  #mb_login #login_fs .btn_submit{
+    margin: 0;
+    border-radius: 0;
+  }
+  .main_button_wrap{
+    height: 80rem;
+    gap:10rem;
+    margin-top: 20rem;
+    .btn_submit{
+      height: 100%;
+      font-size: 17rem;
+      color: #fff;
+    }
+    .login{
+      background: var(--pri-04);
+    }
+    .join{
+      background: var(--pri-01);
+    }
+  }
+}
+#login_info .login_if_lpl {
+  float:unset;
+  text-align: center;
+  margin-top: 20rem;
+}
+#login_password_lost{
+  border:0;
+  border-radius: 0;
+  padding: 10rem 20rem;
+  color:#9A9A9A;
+  font-size: 12rem;
+}

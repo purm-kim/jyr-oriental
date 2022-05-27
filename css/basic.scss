@@ -1,0 +1,165 @@
+// import
+@import "_mixins.scss";
+
+// /* font import*/
+@import url('http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap'); //en
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+//////////////// COLOR STYLE //////////////////
+:root {
+  --pri-01: #9A0C3A;
+  --pri-01-o2 : rgba(141, 119, 106, 0.2);
+  --pri-02: #500019;
+  --pri-03: #7E191E;
+  --pri-04: #ffff00;
+  --pri-05: #00ffff;
+  --sub-01: #FB8E44;
+  --sub-02: #F99B8E;
+  --sub-03: #000055;
+  --sub-04: #333300;
+  --sub-05: #003333;
+  --bg-01:#eee;
+  --bg-02:#ccc;
+  --bg-03:#ddd;
+  --bg-04:#999;
+  --bg-05:#777;
+  --gra-01: linear-gradient(to right, var(--pri-01), #3F332B);
+  --gra-02: linear-gradient(to right, #077, #fff);
+  --gra-03: linear-gradient(to right, #007, #fff);
+  --gra-04: linear-gradient(to right, #080, #fff);
+  --white: #fff;
+  --black: #242424;
+  --black-02: #0E0705;
+  --black-o5:rgba(51, 51, 51, 0.5);
+  --gray-01: #AAAAAA;
+  --gray-02: ##EBEBEB;
+  --white-02 : #EDEDED;
+  --white-03 : #C2C2C2;
+}
+.white{
+  color:var(--white);
+}
+.black{
+  color:var(--black);
+}
+.black-05{
+  color:var(--black-o5);
+}
+// 선택 색상
+::selection {
+  // background: var(--pri-01);
+  background: rgba(165, 8, 57, 0.4);
+  // color: #fff;
+  color: #fff;
+}
+.highlight, mark {
+  box-shadow: inset 0 -8rem 0 rgba(156, 158, 57, 0.2);
+}
+// 스크롤 색상
+* {
+  /* width */
+  &::-webkit-scrollbar {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1rem var(--sub-01);
+    border-radius: 10rem;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: var(--pri-01);
+    border-radius: 10rem;
+  }
+}
+
+
+///////////////////  FONT STYLE ///////////////////
+.fwl, .fw300{
+  font-weight: 300;
+}
+.fwb, .fw700, strong, .bold{
+  font-weight: 700;
+}
+
+//text-style
+html, body, input{
+  font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
+.en{
+  font-family: 'Marcellus', serif;
+  font-weight: 400 !important;
+}
+.ff-2nd{
+  font-family: 'Spoqa Han Sans Neo';
+}
+.h1{
+  font-size: 60rem;
+}
+.h2{
+  font-size: 64rem;
+  // letter-spacing: -0.02em;
+  font-weight: 400;
+  line-height: 1.15;
+  &.en{
+    font-size: 50rem;
+    font-weight: 400;
+  }
+}
+.h2-b{
+  font-size: 48rem;
+  font-weight: bold;
+  line-height: 64rem;
+}
+.h3{
+  font-size: 28rem;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  font-weight: bold;
+  &.en{
+    font-size: 30rem;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
+}
+.h4{
+  font-size: 21rem;
+  line-height: 2;
+}
+.h5{
+  font-size: 18rem;
+}
+.p1{
+  font-size: 30rem;
+}
+.p1-b{
+  font-size: 30rem;
+  font-weight: bold;
+}
+.p02{
+  font-size: 16rem;
+  line-height: 1.8;
+}
+.fz70{
+  font-size: 70rem;
+  line-height: 90rem;
+}
+.fz120{
+  font-size: 120rem;
+}
+
+span,
+div,
+p {
+  word-break: keep-all;
+}
+p {
+  line-height: 1.72;
+}
+
+
+
